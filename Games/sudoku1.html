@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+<div id="sudokubox" style="width:442px"> 
+<table border="0"> 
+  <tr> 
+    <td width="250"> 
+	<form id="frmSudoku"> 
+	  <table border="0" id="tbSudoku" class="sudokukidtable"  cellpadding="0" cellspacing="0"> 
+	    <tr> 
+			<td class="sudokukidtd"> 
+				<table id="b1" border="0" cellpadding="0" cellspacing="0"> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC11" type="text" id="txtC11" size="1" class="sudokuKidInput" style="background:#F96468"/></td> 
+					<td class="sudokukidcell"><input name="txtC21" type="text" id="txtC21" size="1" class="sudokuKidInput" style="background:#F96468"/></td> 
+				  </tr> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC12" type="text" id="txtC12" size="1" class="sudokuKidInput" style="background:#F96468"/></td> 
+					<td class="sudokukidcell"><input name="txtC22" type="text" id="txtC22" size="1" class="sudokuKidInput" style="background:#F96468"/></td> 
+				  </tr> 
+				</table>			
+			</td> 
+			<td class="sudokukidtd"> 
+				<table id="b2" border="0" cellpadding="0" cellspacing="0"> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC31" type="text" id="txtC31" size="1" class="sudokuKidInput" style="background:#709aeb"/></td> 
+					<td class="sudokukidcell"><input name="txtC41" type="text" id="txtC41" size="1" class="sudokuKidInput" style="background:#709aeb" /></td> 
+				  </tr> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC32" type="text" id="txtC32" size="1" class="sudokuKidInput" style="background:#709aeb" /></td> 
+					<td class="sudokukidcell"><input name="txtC42" type="text" id="txtC42" size="1" class="sudokuKidInput" style="background:#709aeb" /></td> 
+				  </tr> 
+				</table>			
+			</td> 
+	    </tr> 
+		  <tr> 
+			<td class="sudokukidtd"> 
+				<table id="b3" border="0" cellpadding="0" cellspacing="0"> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC13" type="text" id="txtC13" size="1" class="sudokuKidInput" style="background:#B0EEB4"/></td> 
+					<td class="sudokukidcell"><input name="txtC23" type="text" id="txtC23" size="1" class="sudokuKidInput" style="background:#B0EEB4"/></td> 
+				  </tr> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC14" type="text" id="txtC14" size="1" class="sudokuKidInput" style="background:#B0EEB4"/></td> 
+					<td class="sudokukidcell"><input name="txtC24" type="text" id="txtC24" size="1" class="sudokuKidInput" style="background:#B0EEB4"/></td> 
+				  </tr> 
+				</table>			
+			</td> 
+			<td class="sudokukidtd"> 
+				<table id="b4" border="0" cellpadding="0" cellspacing="0"> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC33" type="text" id="txtC33" size="1" class="sudokuKidInput" style="background:#FFFF99"/></td> 
+					<td class="sudokukidcell"><input name="txtC43" type="text" id="txtC43" size="1" class="sudokuKidInput" style="background:#FFFF99"/></td> 
+				  </tr> 
+				  <tr> 
+					<td class="sudokukidcell"><input name="txtC34" type="text" id="txtC34" size="1" class="sudokuKidInput" style="background:#FFFF99"/></td> 
+					<td class="sudokukidcell"><input name="txtC44" type="text" id="txtC44" size="1" class="sudokuKidInput" style="background:#FFFF99"/></td> 
+				  </tr> 
+				</table>			
+			</td> 
+		  </tr> 
+	  </table> 
+      <p style="margin-top:50px"><script type="text/javascript"><!--
+google_ad_client = "pub-9298242687620115";
+/* mypuzzle.org - below game BLOCK - 336x280, Erstellt 18.12.08 */
+google_ad_slot = "9605264153";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script> 
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+</script> 
+<!-- XTEMPLATE:adsense-belowgame --></p> 
+	</form>    </td> 
+    <td valign="top" width="130" align="center"> 
+      <p> 
+      	<img src="../img/sudoku_start.png" onClick="create_new()" style="cursor:pointer" onMouseDown="this.src='../img/sudoku_start_pressed.png'" onMouseUp="this.src='../img/sudoku_start.png'"/> 
+        </p> 
+      <p> 
+      	<img src="../img/sudoku_finish.png" onClick="finished_sudoku()" style="cursor:pointer" onMouseDown="this.src='../img/sudoku_finish_pressed.png'" onMouseUp="this.src='../img/sudoku_finish.png'" /> 
+        </p> 
+      <p> 
+        &nbsp;</p> 
+      <p>&nbsp;</p> 
+      <p><span id="time">Time: 00:00</span> 
+      </p> 
+      <p> 
+      <img src="../img/sudoku_pause.png" onClick="if (!m_sSudoku) return;timer_switch();if(is_paused()){ this.src='../img/sudoku_pause_continue.png'; }else{ this.src='../img/sudoku_pause.png'; }" style="cursor:pointer" /> 
+      </p> 
+      
+      </td> 
+  </tr> 
+</table> 
+ 
+</div>
+</body>
+
+</html>

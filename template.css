@@ -1,0 +1,209 @@
+﻿body
+{
+	background-image: url('images/texture-back.jpg');
+	background-repeat:repeat;
+	background-position:left top;
+	font-family:"Comic Sans MS";
+}
+h5
+{
+	color:gray;
+}
+h3{
+	background-image:url('images/h3_img.jpg');
+	background-repeat:no-repeat;
+	padding-left:35px;
+	text-transform:uppercase;
+}
+#bodystyle
+{
+	width:1000px;
+	background-color:white;
+	margin:auto;
+}
+p img{
+	padding:0px,5px,0px,5px;
+}
+#head
+{
+		position:relative;
+		padding-top:10px;
+}
+#menu
+{
+	width:990px;
+	border:5px groove #cfdee1;
+	font-size:x-large;
+}
+#menu li
+{
+	float:left;
+	padding:0px 23px 0px 15px;
+}
+#menu li:hover{
+		background-image:url('images/menu_li_back.png');
+	background-repeat:repeat-x;
+
+}
+#menu li a{
+	color:black;
+	text-decoration:none;
+}
+#menu li a:hover{
+	color:#1465b1;
+}
+#menu ul{
+	list-style-type:none;
+	height:33px;
+			border:medium;
+	border-color:gray gray gray gray;
+
+}
+#container
+{
+	width:700px;
+	border:thick gray groove;
+	float:left;
+	background-color:white;
+}
+#sidebar{
+	float:right;
+	width:270px;
+	border:thick gray groove;
+	background:white;
+	padding-top:10px;
+}
+#sidebar p{
+	font-size:large;
+}
+#sidebar h3{
+	background-attachment:
+}
+p{
+	text-align:justify;
+	padding:5px 10px 5px 5px;
+}
+#newsline
+{
+	background-image:url('images/news-line.jpg');
+	width:1000px;
+	height:50px;
+	padding:8px 0px 5px 10px;
+	font-size:x-large;
+	background-repeat:no-repeat;
+}
+#comments{
+	width:690px;
+	border:thick gray groove;
+	float:left;
+	background-color:white;
+	padding-left:10px;
+	font-size:small;
+}
+#contentbox
+{
+	background-image:url('images/backgrounds09.gif');
+	background-repeat:repeat-x;
+	background-repeat:repeat-y;
+	float:left;
+	width:250px;
+	}
+#contentbox a{	color:black;}
+#contentbox a:link{	color:black;}
+.clb{
+	color:#1465b1;
+}
+h3.clb{
+	background-image:url('images/h3_blue.jpg');
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+#games{
+	float:right;
+}
+#tabs
+{
+	width:990px;
+	font-size:large;
+}
+#tabs li
+{
+	float:left;
+	padding:0px 23px 0px 15px;
+	border-right:thin gray double;
+}
+#tabs li.current
+{
+	background:gray;
+}
+#tabs li:hover{
+	background-color:silver;
+	color:white;
+}
+#tabs a{
+	color:black;
+	text-decoration:none;
+}
+#tabs ul{
+	list-style-type:none;
+	height:33px;
+	border:medium;
+	border-color:gray gray gray gray;
+	background-image:url('tabs_ul_back.png');
+	background-repeat:repeat-x;
+}
+#footer
+{
+	border:thick gray groove;
+	background-color:gray;
+	color:white;
+	text-align:center;
+	height:25px;
+	float:left;
+	width:1000px;
+}
+#footer a{
+	color:white;
+}
+/* Tabbed Menu CSS */
+ol#toc {
+    height: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol#toc li {
+    background: #bdf url(tabs.gif);
+    float: left;
+    margin: 0 1px 0 0;
+    padding-left: 10px;
+}
+
+ol#toc a {
+    background: url(tabs.gif) 100% 0;
+    color: #008;
+    display: block;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+ol#toc li.current {
+    background-color: #48f;
+    background-position: 0 -60px;
+}
+
+ol#toc li.current a {
+    background-position: 100% -60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+div.content {
+    border: #48f solid 3px;
+    clear: left;
+    padding: 1em;
+}
