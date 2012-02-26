@@ -207,3 +207,12 @@ div.content {
     clear: left;
     padding: 1em;
 }
+
+iframe{
+	border:none;
+	overflow:hidden;
+}
+
+iframe{
+	overflow:hidden;
+}
